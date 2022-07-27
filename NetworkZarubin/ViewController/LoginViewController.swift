@@ -47,10 +47,14 @@ extension LoginViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
         
-        guard let url = navigationResponse.response.url, url.path == "blank.html", let fragment = url.fragment else {
+        guard let url = navigationResponse.response.url, url.path == "/blank.html", let fragment = url.fragment else {
             decisionHandler(.allow)
             return
         }
+        
+        
+        
+        
         
         let parms = fragment
             .components(separatedBy: "&")
@@ -65,9 +69,9 @@ extension LoginViewController: WKNavigationDelegate {
         
         if let token = parms["access_token"] {
             Session.instance.token = token
-            performSegue(withIdentifier: "toNewControllerSegue", sender: nil)
+            performSegue(withIdentifier: "toTabBarController", sender: nil)
         
-        printContent(Session.instance.token)
+        print(token)
         }
         decisionHandler(.cancel)
     }
