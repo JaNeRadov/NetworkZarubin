@@ -11,10 +11,6 @@ import Alamofire
 
 class GetFriends {
     
-    func friendsDecode(for data: Data) throws ->  Friends  {
-        return try JSONDecoder().decode(Friends.self, from: data)
-    }
-    
     func getFriends() {
         
         let session = URLSession.shared
@@ -33,8 +29,8 @@ class GetFriends {
         
         let task = session.dataTask(with: url) { ( data, response, error ) in
             guard let jsonData = data else { return }
-//            let jsonString = String(data: jsonData, encoding: .utf8)
-//            print(jsonString)
+            //            let jsonString = String(data: jsonData, encoding: .utf8)
+            //            print(jsonString)
             
             guard let friends = try? JSONDecoder().decode(Friends.self , from: jsonData) else { return }
             print(friends.response)
@@ -48,7 +44,7 @@ class GetFriends {
         
     }
     
-  
     
-   
+    
+    
 }

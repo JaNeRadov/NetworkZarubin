@@ -17,13 +17,13 @@ struct Response: Decodable {
 }
 
 struct Items: Decodable {
-    let id: Int
+        let id: Int
         let nickname: String?
-        let track_code: String
-        let first_name: String
-        let last_name: String
-        let can_access_closed: Bool
-        let is_closed: Bool
+        let trackCode: String
+        let firstName: String
+        let lastName: String
+        let canAccessClosed: Bool
+        let isClosed: Bool
         
 }
        
@@ -32,11 +32,11 @@ extension Items {
     enum CodingKeys: String, CodingKey {
             case id
             case nickname
-            case track_code = "trackCode"
-            case first_name = "firstName"
-            case last_name = "lastName"
-            case can_access_closed = "canAccessClosed"
-            case is_closed = "isClosed"
+            case trackCode = "track_code"
+            case firstName = "first_name"
+            case lastName = "last_name"
+            case canAccessClosed = "can_access_closed"
+            case isClosed = "is_closed"
         }
 }
 

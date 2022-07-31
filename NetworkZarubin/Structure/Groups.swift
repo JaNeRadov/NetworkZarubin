@@ -17,28 +17,28 @@ struct GroupResponse: Decodable {
 struct GroupItem: Decodable {
     let id: Int
     let name: String
-    let screen_name: String
-    let is_closed: Int
+    let screenName: String
+    let isClosed: Int
     let type: String
-    let is_admin: Int
-    let is_member: Int
-    let is_advertiser: Int
-    let photo_50: String
-    let photo_100: String
-    let photo_200: String
+    let isAdmin: Int
+    let isMember: Int
+    let isAdvertiser: Int
+    let photoFifty: String
+    let photoOneHundred: String
+    let photoTwoHundred: String
 }
 extension GroupItem {
     enum CodingKeys: String, CodingKey {
         case id
         case name
-        case screen_name = "screenName"
-        case is_closed = "isClosed"
+        case screenName = "screen_name"
+        case isClosed = "is_closed"
         case type
-        case is_admin = "isAdmin"
-        case is_member = "isMember"
-        case is_advertiser = "isAdvertiser"
-        case photo_50 = "photoFifty"
-        case photo_100 = "photoOneHundred"
-        case photo_200 = "photoTwoHundred"
+        case isAdmin = "is_admin"
+        case isMember = "is_member"
+        case isAdvertiser = "is_advertiser"
+        case photoFifty = "photo_50"
+        case photoOneHundred = "photo_100"
+        case photoTwoHundred = "photo_200"
     }
 }

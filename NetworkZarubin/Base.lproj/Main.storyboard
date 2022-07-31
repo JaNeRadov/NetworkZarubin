@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="68"/>
+            <point key="canvasLocation" x="654" y="70"/>
         </scene>
         <!--Друзья-->
         <scene sceneID="bzS-we-n3f">
@@ -188,6 +188,34 @@
             </objects>
             <point key="canvasLocation" x="1277" y="2317"/>
         </scene>
+        <!--Профиль-->
+        <scene sceneID="DA8-o3-9ES">
+            <objects>
+                <viewController id="5w3-yh-pvR" customClass="ProfileViewController" customModule="NetworkZarubin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZQ7-IC-cfm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jmc-Ov-HES">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FWl-aP-Iq6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FWl-aP-Iq6" firstAttribute="trailing" secondItem="jmc-Ov-HES" secondAttribute="trailing" id="Oj6-fy-7vB"/>
+                            <constraint firstItem="jmc-Ov-HES" firstAttribute="leading" secondItem="FWl-aP-Iq6" secondAttribute="leading" id="ctU-vW-Fyr"/>
+                            <constraint firstItem="jmc-Ov-HES" firstAttribute="top" secondItem="FWl-aP-Iq6" secondAttribute="top" id="fVf-qm-mAv"/>
+                            <constraint firstItem="FWl-aP-Iq6" firstAttribute="bottom" secondItem="jmc-Ov-HES" secondAttribute="bottom" id="xWx-37-rZn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Профиль" id="TJx-CW-Mf3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIx-y3-mfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2461" y="2317"/>
+        </scene>
         <!--Группы-->
         <scene sceneID="mvx-nF-T5e">
             <objects>
@@ -242,16 +270,39 @@
                         <segue destination="2LN-Of-JDu" kind="relationship" relationship="viewControllers" id="gIb-Ek-FKI"/>
                         <segue destination="scI-s3-rrZ" kind="relationship" relationship="viewControllers" id="rkE-9h-Utd"/>
                         <segue destination="PO9-gt-HXy" kind="relationship" relationship="viewControllers" id="GhM-pL-CZy"/>
+                        <segue destination="hBL-7U-MA1" kind="relationship" relationship="viewControllers" id="DKk-F7-tRC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkk-Bs-Q1F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="812"/>
+            <point key="canvasLocation" x="654" y="814"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="DS9-K7-WzF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hBL-7U-MA1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="tK1-AJ-Jpf"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="VCq-MP-mQ8"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4s3-cr-lBJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5w3-yh-pvR" kind="relationship" relationship="rootViewController" id="edz-iS-Dtq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rzf-Iz-oee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2462" y="1542"/>
         </scene>
     </scenes>
     <resources>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="person.2.wave.2.fill" catalog="system" width="128" height="84"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -12,6 +12,9 @@
 		3F71F9DB28874B7500DA8AA2 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71F9DA28874B7500DA8AA2 /* Friends.swift */; };
 		3F71F9DD28874DB600DA8AA2 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71F9DC28874DB600DA8AA2 /* Groups.swift */; };
 		3F71F9DF28874E0F00DA8AA2 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71F9DE28874E0F00DA8AA2 /* Photo.swift */; };
+		3FB9EAF028970C23009C1996 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9EAEF28970C23009C1996 /* ProfileViewController.swift */; };
+		3FB9EAF228970C44009C1996 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9EAF128970C44009C1996 /* Profile.swift */; };
+		3FB9EAF428971231009C1996 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9EAF328971231009C1996 /* UserRequest.swift */; };
 		3FC0242128835BE100C59D0E /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC0242028835BE100C59D0E /* FriendsViewController.swift */; };
 		3FC0242428835C0E00C59D0E /* FriendsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC0242328835C0E00C59D0E /* FriendsRequest.swift */; };
 		3FC024262884442600C59D0E /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC024252884442600C59D0E /* GroupViewController.swift */; };
@@ -33,6 +36,9 @@
 		3F71F9DA28874B7500DA8AA2 /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		3F71F9DC28874DB600DA8AA2 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		3F71F9DE28874E0F00DA8AA2 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3FB9EAEF28970C23009C1996 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3FB9EAF128970C44009C1996 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		3FB9EAF328971231009C1996 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		3FC0242028835BE100C59D0E /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		3FC0242328835C0E00C59D0E /* FriendsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsRequest.swift; sourceTree = "<group>"; };
 		3FC024252884442600C59D0E /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +74,6 @@
 				2648214174DB96712212808C /* Pods-NetworkZarubin.debug.xcconfig */,
 				EA1F79F6BD9A966EB8D2660C /* Pods-NetworkZarubin.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,6 +91,7 @@
 				3F71F9DA28874B7500DA8AA2 /* Friends.swift */,
 				3F71F9DC28874DB600DA8AA2 /* Groups.swift */,
 				3F71F9DE28874E0F00DA8AA2 /* Photo.swift */,
+				3FB9EAF128970C44009C1996 /* Profile.swift */,
 			);
 			path = Structure;
 			sourceTree = "<group>";
@@ -94,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				3FD59222287CBCC300BFD2BC /* LoginViewController.swift */,
+				3FB9EAEF28970C23009C1996 /* ProfileViewController.swift */,
 				3FC0242028835BE100C59D0E /* FriendsViewController.swift */,
 				3FC024252884442600C59D0E /* GroupViewController.swift */,
 				3F71F9D728873C9600DA8AA2 /* PhotoViewController.swift */,
@@ -107,6 +114,7 @@
 				3FC0242328835C0E00C59D0E /* FriendsRequest.swift */,
 				3FC024272884443A00C59D0E /* GroupRequest.swift */,
 				3F71F9D52887387200DA8AA2 /* PhotoRequest.swift */,
+				3FB9EAF328971231009C1996 /* UserRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -262,9 +270,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD59233287CBEB600BFD2BC /* Session.swift in Sources */,
+				3FB9EAF228970C44009C1996 /* Profile.swift in Sources */,
 				3FC0242128835BE100C59D0E /* FriendsViewController.swift in Sources */,
 				3FD59223287CBCC300BFD2BC /* LoginViewController.swift in Sources */,
+				3FB9EAF428971231009C1996 /* UserRequest.swift in Sources */,
 				3F71F9DB28874B7500DA8AA2 /* Friends.swift in Sources */,
+				3FB9EAF028970C23009C1996 /* ProfileViewController.swift in Sources */,
 				3FC024282884443A00C59D0E /* GroupRequest.swift in Sources */,
 				3FC0242428835C0E00C59D0E /* FriendsRequest.swift in Sources */,
 				3F71F9DF28874E0F00DA8AA2 /* Photo.swift in Sources */,
