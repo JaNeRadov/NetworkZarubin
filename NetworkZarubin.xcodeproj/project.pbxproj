@@ -7,23 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F71F9D62887387200DA8AA2 /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71F9D52887387200DA8AA2 /* PhotoRequest.swift */; };
+		3F71F9D828873C9600DA8AA2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71F9D728873C9600DA8AA2 /* PhotoViewController.swift */; };
+		3F71F9DB28874B7500DA8AA2 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71F9DA28874B7500DA8AA2 /* Friends.swift */; };
+		3F71F9DD28874DB600DA8AA2 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71F9DC28874DB600DA8AA2 /* Groups.swift */; };
+		3F71F9DF28874E0F00DA8AA2 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71F9DE28874E0F00DA8AA2 /* Photo.swift */; };
+		3FB9EAF028970C23009C1996 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9EAEF28970C23009C1996 /* ProfileViewController.swift */; };
+		3FB9EAF228970C44009C1996 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9EAF128970C44009C1996 /* Profile.swift */; };
+		3FB9EAF428971231009C1996 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9EAF328971231009C1996 /* UserRequest.swift */; };
+		3FC0242128835BE100C59D0E /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC0242028835BE100C59D0E /* FriendsViewController.swift */; };
+		3FC0242428835C0E00C59D0E /* FriendsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC0242328835C0E00C59D0E /* FriendsRequest.swift */; };
+		3FC024262884442600C59D0E /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC024252884442600C59D0E /* GroupViewController.swift */; };
+		3FC024282884443A00C59D0E /* GroupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC024272884443A00C59D0E /* GroupRequest.swift */; };
 		3FD5921F287CBCC300BFD2BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5921E287CBCC300BFD2BC /* AppDelegate.swift */; };
 		3FD59221287CBCC300BFD2BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD59220287CBCC300BFD2BC /* SceneDelegate.swift */; };
-		3FD59223287CBCC300BFD2BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD59222287CBCC300BFD2BC /* ViewController.swift */; };
+		3FD59223287CBCC300BFD2BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD59222287CBCC300BFD2BC /* LoginViewController.swift */; };
 		3FD59226287CBCC300BFD2BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD59224287CBCC300BFD2BC /* Main.storyboard */; };
 		3FD59228287CBCC600BFD2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD59227287CBCC600BFD2BC /* Assets.xcassets */; };
 		3FD5922B287CBCC600BFD2BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD59229287CBCC600BFD2BC /* LaunchScreen.storyboard */; };
+		3FD59233287CBEB600BFD2BC /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD59232287CBEB600BFD2BC /* Session.swift */; };
+		A56E3D771933874CAA7D85B1 /* Pods_NetworkZarubin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31FA08E878CF318D644885A /* Pods_NetworkZarubin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2648214174DB96712212808C /* Pods-NetworkZarubin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkZarubin.debug.xcconfig"; path = "Target Support Files/Pods-NetworkZarubin/Pods-NetworkZarubin.debug.xcconfig"; sourceTree = "<group>"; };
+		3F71F9D52887387200DA8AA2 /* PhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
+		3F71F9D728873C9600DA8AA2 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		3F71F9DA28874B7500DA8AA2 /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		3F71F9DC28874DB600DA8AA2 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
+		3F71F9DE28874E0F00DA8AA2 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3FB9EAEF28970C23009C1996 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3FB9EAF128970C44009C1996 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		3FB9EAF328971231009C1996 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		3FC0242028835BE100C59D0E /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		3FC0242328835C0E00C59D0E /* FriendsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsRequest.swift; sourceTree = "<group>"; };
+		3FC024252884442600C59D0E /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		3FC024272884443A00C59D0E /* GroupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRequest.swift; sourceTree = "<group>"; };
 		3FD5921B287CBCC300BFD2BC /* NetworkZarubin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkZarubin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD5921E287CBCC300BFD2BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD59220287CBCC300BFD2BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3FD59222287CBCC300BFD2BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FD59222287CBCC300BFD2BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FD59225287CBCC300BFD2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FD59227287CBCC600BFD2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD5922A287CBCC600BFD2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FD5922C287CBCC600BFD2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD59232287CBEB600BFD2BC /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		EA1F79F6BD9A966EB8D2660C /* Pods-NetworkZarubin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkZarubin.release.xcconfig"; path = "Target Support Files/Pods-NetworkZarubin/Pods-NetworkZarubin.release.xcconfig"; sourceTree = "<group>"; };
+		F31FA08E878CF318D644885A /* Pods_NetworkZarubin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkZarubin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56E3D771933874CAA7D85B1 /* Pods_NetworkZarubin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B531F57AD048C2B04FC2D58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2648214174DB96712212808C /* Pods-NetworkZarubin.debug.xcconfig */,
+				EA1F79F6BD9A966EB8D2660C /* Pods-NetworkZarubin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2F4B488BD65FF53E6580B96C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F31FA08E878CF318D644885A /* Pods_NetworkZarubin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F71F9D928874B2100DA8AA2 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				3F71F9DA28874B7500DA8AA2 /* Friends.swift */,
+				3F71F9DC28874DB600DA8AA2 /* Groups.swift */,
+				3F71F9DE28874E0F00DA8AA2 /* Photo.swift */,
+				3FB9EAF128970C44009C1996 /* Profile.swift */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		3FC0241F28835A6600C59D0E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3FD59222287CBCC300BFD2BC /* LoginViewController.swift */,
+				3FB9EAEF28970C23009C1996 /* ProfileViewController.swift */,
+				3FC0242028835BE100C59D0E /* FriendsViewController.swift */,
+				3FC024252884442600C59D0E /* GroupViewController.swift */,
+				3F71F9D728873C9600DA8AA2 /* PhotoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3FC0242228835BED00C59D0E /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				3FC0242328835C0E00C59D0E /* FriendsRequest.swift */,
+				3FC024272884443A00C59D0E /* GroupRequest.swift */,
+				3F71F9D52887387200DA8AA2 /* PhotoRequest.swift */,
+				3FB9EAF328971231009C1996 /* UserRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		3FD59212287CBCC200BFD2BC = {
 			isa = PBXGroup;
 			children = (
 				3FD5921D287CBCC300BFD2BC /* NetworkZarubin */,
 				3FD5921C287CBCC300BFD2BC /* Products */,
+				2B531F57AD048C2B04FC2D58 /* Pods */,
+				2F4B488BD65FF53E6580B96C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +140,13 @@
 		3FD5921D287CBCC300BFD2BC /* NetworkZarubin */ = {
 			isa = PBXGroup;
 			children = (
+				3F71F9D928874B2100DA8AA2 /* Structure */,
+				3FC0242228835BED00C59D0E /* Request */,
 				3FD5921E287CBCC300BFD2BC /* AppDelegate.swift */,
 				3FD59220287CBCC300BFD2BC /* SceneDelegate.swift */,
-				3FD59222287CBCC300BFD2BC /* ViewController.swift */,
+				3FC0241F28835A6600C59D0E /* ViewController */,
 				3FD59224287CBCC300BFD2BC /* Main.storyboard */,
+				3FD59232287CBEB600BFD2BC /* Session.swift */,
 				3FD59227287CBCC600BFD2BC /* Assets.xcassets */,
 				3FD59229287CBCC600BFD2BC /* LaunchScreen.storyboard */,
 				3FD5922C287CBCC600BFD2BC /* Info.plist */,
@@ -74,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FD5922F287CBCC600BFD2BC /* Build configuration list for PBXNativeTarget "NetworkZarubin" */;
 			buildPhases = (
+				E2A90229400A7430474BB3EA /* [CP] Check Pods Manifest.lock */,
 				3FD59217287CBCC300BFD2BC /* Sources */,
 				3FD59218287CBCC300BFD2BC /* Frameworks */,
 				3FD59219287CBCC300BFD2BC /* Resources */,
+				BE3DDA2279E6191199D0280B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +222,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BE3DDA2279E6191199D0280B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkZarubin/Pods-NetworkZarubin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkZarubin/Pods-NetworkZarubin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkZarubin/Pods-NetworkZarubin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A90229400A7430474BB3EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkZarubin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FD59217287CBCC300BFD2BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD59223287CBCC300BFD2BC /* ViewController.swift in Sources */,
+				3FD59233287CBEB600BFD2BC /* Session.swift in Sources */,
+				3FB9EAF228970C44009C1996 /* Profile.swift in Sources */,
+				3FC0242128835BE100C59D0E /* FriendsViewController.swift in Sources */,
+				3FD59223287CBCC300BFD2BC /* LoginViewController.swift in Sources */,
+				3FB9EAF428971231009C1996 /* UserRequest.swift in Sources */,
+				3F71F9DB28874B7500DA8AA2 /* Friends.swift in Sources */,
+				3FB9EAF028970C23009C1996 /* ProfileViewController.swift in Sources */,
+				3FC024282884443A00C59D0E /* GroupRequest.swift in Sources */,
+				3FC0242428835C0E00C59D0E /* FriendsRequest.swift in Sources */,
+				3F71F9DF28874E0F00DA8AA2 /* Photo.swift in Sources */,
 				3FD5921F287CBCC300BFD2BC /* AppDelegate.swift in Sources */,
 				3FD59221287CBCC300BFD2BC /* SceneDelegate.swift in Sources */,
+				3F71F9D62887387200DA8AA2 /* PhotoRequest.swift in Sources */,
+				3FC024262884442600C59D0E /* GroupViewController.swift in Sources */,
+				3F71F9D828873C9600DA8AA2 /* PhotoViewController.swift in Sources */,
+				3F71F9DD28874DB600DA8AA2 /* Groups.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +428,7 @@
 		};
 		3FD59230287CBCC600BFD2BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2648214174DB96712212808C /* Pods-NetworkZarubin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +457,7 @@
 		};
 		3FD59231287CBCC600BFD2BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA1F79F6BD9A966EB8D2660C /* Pods-NetworkZarubin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
