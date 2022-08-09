@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F04F39E28A30FA800A382A2 /* DBFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04F39D28A30FA800A382A2 /* DBFriends.swift */; };
+		3F04F3A028A30FB800A382A2 /* DBGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04F39F28A30FB800A382A2 /* DBGroups.swift */; };
+		3F04F3A228A30FC800A382A2 /* DBPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04F3A128A30FC800A382A2 /* DBPhoto.swift */; };
+		3F04F3A428A30FD600A382A2 /* DBProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04F3A328A30FD600A382A2 /* DBProfile.swift */; };
 		3F71F9D62887387200DA8AA2 /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71F9D52887387200DA8AA2 /* PhotoRequest.swift */; };
 		3F71F9D828873C9600DA8AA2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71F9D728873C9600DA8AA2 /* PhotoViewController.swift */; };
 		3F71F9DB28874B7500DA8AA2 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71F9DA28874B7500DA8AA2 /* Friends.swift */; };
@@ -31,6 +35,10 @@
 
 /* Begin PBXFileReference section */
 		2648214174DB96712212808C /* Pods-NetworkZarubin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkZarubin.debug.xcconfig"; path = "Target Support Files/Pods-NetworkZarubin/Pods-NetworkZarubin.debug.xcconfig"; sourceTree = "<group>"; };
+		3F04F39D28A30FA800A382A2 /* DBFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBFriends.swift; sourceTree = "<group>"; };
+		3F04F39F28A30FB800A382A2 /* DBGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBGroups.swift; sourceTree = "<group>"; };
+		3F04F3A128A30FC800A382A2 /* DBPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBPhoto.swift; sourceTree = "<group>"; };
+		3F04F3A328A30FD600A382A2 /* DBProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBProfile.swift; sourceTree = "<group>"; };
 		3F71F9D52887387200DA8AA2 /* PhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
 		3F71F9D728873C9600DA8AA2 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		3F71F9DA28874B7500DA8AA2 /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
@@ -85,9 +93,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3F04F39C28A30F9700A382A2 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				3F04F39D28A30FA800A382A2 /* DBFriends.swift */,
+				3F04F39F28A30FB800A382A2 /* DBGroups.swift */,
+				3F04F3A128A30FC800A382A2 /* DBPhoto.swift */,
+				3F04F3A328A30FD600A382A2 /* DBProfile.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
 		3F71F9D928874B2100DA8AA2 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
+				3F04F39C28A30F9700A382A2 /* DataBase */,
 				3F71F9DA28874B7500DA8AA2 /* Friends.swift */,
 				3F71F9DC28874DB600DA8AA2 /* Groups.swift */,
 				3F71F9DE28874E0F00DA8AA2 /* Photo.swift */,
@@ -270,8 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD59233287CBEB600BFD2BC /* Session.swift in Sources */,
+				3F04F3A428A30FD600A382A2 /* DBProfile.swift in Sources */,
 				3FB9EAF228970C44009C1996 /* Profile.swift in Sources */,
 				3FC0242128835BE100C59D0E /* FriendsViewController.swift in Sources */,
+				3F04F3A028A30FB800A382A2 /* DBGroups.swift in Sources */,
 				3FD59223287CBCC300BFD2BC /* LoginViewController.swift in Sources */,
 				3FB9EAF428971231009C1996 /* UserRequest.swift in Sources */,
 				3F71F9DB28874B7500DA8AA2 /* Friends.swift in Sources */,
@@ -283,6 +305,8 @@
 				3FD59221287CBCC300BFD2BC /* SceneDelegate.swift in Sources */,
 				3F71F9D62887387200DA8AA2 /* PhotoRequest.swift in Sources */,
 				3FC024262884442600C59D0E /* GroupViewController.swift in Sources */,
+				3F04F39E28A30FA800A382A2 /* DBFriends.swift in Sources */,
+				3F04F3A228A30FC800A382A2 /* DBPhoto.swift in Sources */,
 				3F71F9D828873C9600DA8AA2 /* PhotoViewController.swift in Sources */,
 				3F71F9DD28874DB600DA8AA2 /* Groups.swift in Sources */,
 			);
