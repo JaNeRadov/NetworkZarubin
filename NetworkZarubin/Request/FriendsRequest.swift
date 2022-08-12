@@ -34,8 +34,6 @@ class GetFriends {
             guard let jsonData = data else { return }
             guard let friends = try? decoder.decode(Friends.self, from: jsonData) else { return }
             print(friends.response)
-            
-            
         
         }
         task.resume()
