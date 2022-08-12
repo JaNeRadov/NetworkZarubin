@@ -9,23 +9,23 @@ import Foundation
 import RealmSwift
 
 class DBGroups: Object {
-    @objc dynamic var response = DBGroupsResponse()
+    @Persisted var response = DBGroupsResponse()
 }
 class DBGroupsResponse: Object {
-    @objc dynamic var count = 0
-    @objc dynamic var items = [DBGroupsItems]()
+    @Persisted var count = 0
+    @Persisted var items = DBGroupsItems()
 }
 
 class DBGroupsItems: Object {
-    @objc dynamic var id = 0
-    @objc dynamic var name = ""
-    @objc dynamic var screenName = ""
-    @objc dynamic var isClosed = 0
-    @objc dynamic var type = ""
-    @objc dynamic var isAdmin = 0
-    @objc dynamic var isMember = 0
-    @objc dynamic var isAdvertiser = 0
-    @objc dynamic var photoFifty = ""
-    @objc dynamic var photoOneHundred = ""
-    @objc dynamic var photoTwoHundred = ""
+    @Persisted var id = 0
+    @Persisted var name = ""
+    @Persisted var screenName = ""
+    @Persisted var isClosed = 0
+    @Persisted var type = ""
+    @Persisted var isAdmin = 0
+    @Persisted var isMember = 0
+    @Persisted var isAdvertiser = 0
+    @Persisted var photoFifty = ""
+    @Persisted var photoOneHundred = ""
+    @Persisted var photoTwoHundred = ""
 }

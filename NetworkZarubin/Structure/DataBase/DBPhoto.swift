@@ -9,16 +9,16 @@ import Foundation
 import RealmSwift
 
 class DBPhoto: Object {
-    @objc dynamic var response = DBPhotoResponse()
+    @Persisted var response = DBPhotoResponse()
 }
 
 class DBPhotoResponse: Object {
-    @objc dynamic var count = 0
-    @objc dynamic var items = DBPhotoItems()
+    @Persisted var count = 0
+    @Persisted var items = DBPhotoItems()
 }
 
 class DBPhotoItems: Object {
-    @objc dynamic var albomId = 0
-    @objc dynamic var id = 0
-    @objc dynamic var url = ""
+    @Persisted var albomId = 0
+    @Persisted var id = 0
+    @Persisted var url = ""
 }

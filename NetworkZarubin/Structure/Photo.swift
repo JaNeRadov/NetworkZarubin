@@ -11,7 +11,7 @@ struct Photo: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        response = try container.decode(PhotoResponse.self, forKey: .response)
+        self.response = try container.decode(PhotoResponse.self, forKey: .response)
     }
     
     let response: PhotoResponse
@@ -25,8 +25,8 @@ struct PhotoResponse: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        count = try container.decode(Int.self, forKey: .count)
-        items = try container.decode(PhotoItems.self, forKey: .items)
+        self.count = try container.decode(Int.self, forKey: .count)
+        self.items = try container.decode(PhotoItems.self, forKey: .items)
     }
     
     let count: Int
@@ -41,9 +41,9 @@ struct PhotoItems: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        albomId = try container.decode(Int.self, forKey: .albbomId)
-        id = try container.decode(Int.self, forKey: .id)
-        url = try container.decode(String.self, forKey: .url)
+        self.albomId = try container.decode(Int.self, forKey: .albbomId)
+        self.id = try container.decode(Int.self, forKey: .id)
+        self.url = try container.decode(String.self, forKey: .url)
     }
     
     let albomId: Int

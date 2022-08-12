@@ -8,6 +8,7 @@
 import Foundation
 import WebKit
 import Alamofire
+import RealmSwift
 
 class GetFriends {
     
@@ -21,25 +22,27 @@ class GetFriends {
         urlConstruct.path = "/method/friends.get"
         urlConstruct.queryItems = [
             URLQueryItem(name: "access_token", value: Session.instance.token),
-            URLQueryItem(name: "fields", value: "first_name"),
+            URLQueryItem(name: "fields", value: "nickname"),
             URLQueryItem(name: "v", value: "5.131")
         ]
         
         guard let url = urlConstruct.url else { return }
         
-        let task = session.dataTask(with: url) { ( data, response, error ) in
-            guard let jsonData = data else { return }
-            //            let jsonString = String(data: jsonData, encoding: .utf8)
-            //            print(jsonString)
+        let task = session.dataTask(with: url) { ( data, response, error) in
+            let decoder = JSONDecoder()
             
-            guard let friends = try? JSONDecoder().decode(Friends.self , from: jsonData) else { return }
+            guard let jsonData = data else { return }
+            guard let friends = try? decoder.decode(Friends.self, from: jsonData) else { return }
             print(friends.response)
             
             
+        
         }
-        
-        
         task.resume()
+        }
+    
+        
+       
         
         
     }
@@ -47,4 +50,4 @@ class GetFriends {
     
     
     
-}
+

@@ -11,7 +11,7 @@ struct Groups: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        response = try container.decode(GroupResponse.self, forKey: .response)
+        self.response = try container.decode(GroupResponse.self, forKey: .response)
     }
     let response: GroupResponse
     
@@ -23,8 +23,8 @@ struct GroupResponse: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        count = try container.decode(Int.self, forKey: .count)
-        items = try container.decode([GroupItem].self, forKey: .items)
+        self.count = try container.decode(Int.self, forKey: .count)
+        self.items = try container.decode([GroupItem].self, forKey: .items)
     }
     let count: Int
     let items: [GroupItem]
@@ -38,17 +38,17 @@ struct GroupItem: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(Int.self, forKey: .id)
-        name = try container.decode(String.self, forKey: .name)
-        screenName = try container.decode(String.self, forKey: .screenName)
-        isClosed = try container.decode(Int.self, forKey: .isClosed)
-        type = try container.decode(String.self, forKey: .type)
-        isAdmin = try container.decode(Int.self, forKey: .isAdmin)
-        isMember = try container.decode(Int.self, forKey: .isMember)
-        isAdvertiser = try container.decode(Int.self, forKey: .isAdvertiser)
-        photoFifty = try container.decode(String.self, forKey: .photoFifty)
-        photoOneHundred = try container.decode(String.self, forKey: .photoOneHundred)
-        photoTwoHundred = try container.decode(String.self, forKey: .photoTwoHundred)
+        self.id = try container.decode(Int.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.screenName = try container.decode(String.self, forKey: .screenName)
+        self.isClosed = try container.decode(Int.self, forKey: .isClosed)
+        self.type = try container.decode(String.self, forKey: .type)
+        self.isAdmin = try container.decode(Int.self, forKey: .isAdmin)
+        self.isMember = try container.decode(Int.self, forKey: .isMember)
+        self.isAdvertiser = try container.decode(Int.self, forKey: .isAdvertiser)
+        self.photoFifty = try container.decode(String.self, forKey: .photoFifty)
+        self.photoOneHundred = try container.decode(String.self, forKey: .photoOneHundred)
+        self.photoTwoHundred = try container.decode(String.self, forKey: .photoTwoHundred)
     }
     let id: Int
     let name: String
