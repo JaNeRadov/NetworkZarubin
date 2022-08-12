@@ -11,7 +11,7 @@ struct Profile: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        userResponse = try container.decode([ProfileResponse].self, forKey: .userResponse)
+        self.userResponse = try container.decode([ProfileResponse].self, forKey: .userResponse)
     }
     let userResponse: [ProfileResponse]
     
@@ -23,11 +23,11 @@ struct ProfileResponse: Decodable {
     
     init(from decoder: Decoder) throws {
         let container =  try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(Int.self, forKey: .id)
-        firstName = try container.decode(String.self, forKey: .firstName)
-        lastName = try container.decode(String.self, forKey: .lastName)
-        canAccessClosed = try container.decode(Bool.self, forKey: .canAccessClosed)
-        isClosed = try container.decode(Bool.self, forKey: .isClosed)
+        self.id = try container.decode(Int.self, forKey: .id)
+        self.firstName = try container.decode(String.self, forKey: .firstName)
+        self.lastName = try container.decode(String.self, forKey: .lastName)
+        self.canAccessClosed = try container.decode(Bool.self, forKey: .canAccessClosed)
+        self.isClosed = try container.decode(Bool.self, forKey: .isClosed)
     }
     
     let id: Int
