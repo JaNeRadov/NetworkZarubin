@@ -32,21 +32,15 @@ class GetFriends {
             let decoder = JSONDecoder()
             
             guard let jsonData = data else { return }
-            guard let friends = try? decoder.decode(Friends.self, from: jsonData) else { return }
-            print(friends.response)
-            
-            
-        
+            guard let friends = try? decoder.decode([Friends].self, from: jsonData) else { return }
+            print(friends)
+//            let realmFriends: [DBFriends] = friends.map { friend in
+//                let realmFriend = DBFriends()
+//            }
         }
         task.resume()
-        }
-    
-        
-       
-        
-        
     }
-    
+}
     
     
     
